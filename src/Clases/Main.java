@@ -23,7 +23,7 @@ public class Main {
 		fms[3]=f4;
 
 		SM s=new SM(fms);
-		String ruta="C:\\Users\\Personal\\eclipse-workspace\\Quiz2019-1\\src\\Fotomultas.txt";
+		String ruta="C:\\Users\\LUIS FELIPE\\estructuras\\Quiz2019-1\\src\\Fotomultas.txt";
 		
 		try {
 			s.leerPrecios(ruta);
@@ -43,7 +43,7 @@ public class Main {
 		System.out.println(s.asignarPrecio(f3));
 		System.out.println(s.asignarPrecio(f4));
 		System.out.println();
-		System.out.println(s.precioMultasVehiculos("m1"));
+		System.out.println("La matricula del vehiculo de matricula m1 es: " + s.precioMultasVehiculos("m1"));
 		
 		
 		

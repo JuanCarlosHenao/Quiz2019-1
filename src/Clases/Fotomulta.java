@@ -19,33 +19,23 @@ public abstract class Fotomulta {
 		this.matricula=matricula;
 		pagada=false;
 		precio=0;
-	
-		
 	}
-	
-	
-	
-	
 	
 	public double getPrecio() {
 		return precio;
 	}
 
-
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-
 
 	public String getMatricula() {
 		return matricula;
 	}
 
-
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
 	}
-
 
 	public String getFecha() {
 		return fecha;
@@ -77,7 +67,5 @@ public abstract class Fotomulta {
 	public void setPagada(boolean pagada) {
 		this.pagada = pagada;
 	}
-	
-	
 
 }

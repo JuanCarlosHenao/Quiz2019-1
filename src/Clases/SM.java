@@ -18,13 +18,9 @@ public class SM {
 	
 	private Dato[] datos;
 	
-	
-	
-	
 	public SM() {
 		super();
 	}
-
 
 	public SM(Camara[] camaras, Vehiculo[] vehiculos, Fotomulta[] fotomultas) {
 		super();
@@ -38,19 +34,13 @@ public class SM {
 		this.fotomultas = fotomultas;
 	}
 	
-	
-	
-	
-	
 	public Dato[] getDatos() {
 		return datos;
 	}
 
-
 	public void setDatos(Dato[] datos) {
 		this.datos = datos;
 	}
-
 
 	public Fotomulta[] getFotomultas() {
 		return fotomultas;
@@ -120,9 +110,7 @@ public class SM {
 					aux+=linea.charAt(i2);
 					//precio=Double.parseDouble(aux);
 					precio=aux;
-				
 				}
-				
 				
 				d=new Dato(tipo,precio);
 				if (datos==null) {
@@ -147,9 +135,6 @@ public class SM {
 			fr.close();
 		}
 		
-		
-		
-		
 	}
 	
 	public Fotomulta[] buscarFMporVehiculo(String matricula) {
@@ -163,12 +148,9 @@ public class SM {
 				}
 				fmsVehiculo[fmsVehiculo.length-1]=fotomultas[i];
 			}
-
 		}
 		return fmsVehiculo;
-		
 	}
-	
 	
 	//1)
 	public Fotomulta[] buscarNOpagadasporVehiculo(String matricula) {
@@ -187,7 +169,6 @@ public class SM {
 		return nopagadas;
 	}
 		
-
 	//nos piden este 
 	public double precioMultasVehiculos(String matricula) {
 		Fotomulta[] nopagadas=buscarNOpagadasporVehiculo(matricula);
@@ -196,8 +177,6 @@ public class SM {
 			total+=nopagadas[i].getPrecio();
 		}
 		return total;
-		
-		
 	}
 	
 	public double asignarPrecio(Fotomulta fotomulta) {
@@ -210,9 +189,7 @@ public class SM {
 			return fotomulta.getPrecio();
 		}else {
 			return -1;
-			
 		}
-		
 	}
 	
 	public void addFotomulta(Fotomulta fotomulta) {
