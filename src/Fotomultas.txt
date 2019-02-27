@@ -1,0 +1,4 @@
+velocidad, 414060
+amarillo-rojo, 828120
+soat, 828116
+tecnomecanica, 414058
